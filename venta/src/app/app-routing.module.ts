@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
+  { path: 'footer', component: FooterComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
