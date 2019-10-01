@@ -1,0 +1,44 @@
+
+/*   		Clases  		*/
+
+
+
+/*  Titlo de la página  */
+.titulo {
+
+	text-align: center;
+	width: 20vw;
+	margin-left: 40vw;
+	margin-top: 10vh;
+ 
+}
+
+
+
+.botones--principales {
+
+	width: 90%;
+	margin-top: 10%;
+	margin-left: 5%;
+	display: flex;
+
+}
+
+.boton {
+	display: block; 
+	width: 25%;
+	border: 1px solid rgb(151, 151, 151);
+	text-align: center;
+	padding: 10%;
+	font-size: 1.3em;
+	border-radius: 25px;
+}
+.boton:hover {
+	-webkit-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+}
+
+.margin--left--10 {
+	margin-left: 6% !important;
+}
