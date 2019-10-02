@@ -1,0 +1,83 @@
+
+.container {
+	display: flex;
+}
+
+#agregar--productos {
+	display: block;
+	width: 50%;
+	border: 1px solid rgb(185, 185, 185);
+	border-radius: 10px;
+	height: 85vh !important;
+	margin-top: 7vh;
+	margin-left: 4vw;
+}
+
+#resumen--compra {
+	display: block;
+	width: 40%;
+	border: 1px solid rgb(185, 185, 185);
+	border-radius: 10px;
+	height: 85vh !important;
+	margin-top: 7vh;
+	margin-left: 1vw;
+}
+
+.buscador--productos {
+	width: 90%;
+	margin: 3%;
+	padding: 10px 15px;
+	margin-top: 10px;
+	border: 1px solid rgb(185, 185, 185);
+	border-radius: 10px;
+}
+
+.monto--total {
+	margin-top: 2em;
+	font-size: 2.5em;
+	color: rgb(47, 160, 180);
+	text-align: center;
+	font-weight: 600;
+}
+.monto--total::before, #subtotal--cantidad::before, #descuento--cantidad::before,  #impuestos--cantidad::before{
+	content: '$';
+}
+
+.montos--especificos {
+	display: block;
+	margin: 15%;
+	line-height: .8em;
+}
+
+#subtotal--cantidad, #descuento--cantidad, #impuestos--cantidad {
+	float: right;
+}
+
+.impuestos {
+	margin-top: 15%;
+}
+
+
+
+/* Clases botones */
+#botones {
+	width: 100%;
+}
+
+#botones button {
+	width: 70%;
+	margin-left: 15%;
+	padding: 15px 0;
+	border-radius: 10px;
+}
+
+#botones .finalizar {
+	border: 1px solid rgb(124, 124, 124);
+	color: rgb(100, 100, 100);
+}
+
+#botones .cancelar {
+	background: linear-gradient(rgb(212, 9, 9),rgb(170, 11, 11));
+	color: #f1f1f1;
+	margin-top: 15px;
+}

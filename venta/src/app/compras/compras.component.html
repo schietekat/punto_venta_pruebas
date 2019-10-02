@@ -1,3 +1,24 @@
-<p>
-  compras works!
-</p>
+
+<div class="container">
+    <div id="agregar--productos">
+        <input (keyup)="buscarProducto()" id="input--busqueda" class="buscador--productos" type="text" placeholder="Buscar productos">
+    </div>
+    
+    <div id="resumen--compra">
+        
+        <p class="monto--total">0.0</p>
+
+        <div class="montos--especificos">
+            <p class="subtotal">Subtotal <label id="subtotal--cantidad">0.00</label> </p>
+            <p class="descuento">Descuento  <label id="descuento--cantidad">0.00</label></p>
+
+            <p class="impuestos">Impuestos  <label id="impuestos--cantidad">0.00</label></p>
+        </div>
+
+        <div id="botones">
+            <button class="finalizar">FINALIZAR</button>
+            <button class="cancelar">CANCELAR</button>
+        </div>
+
+    </div>
+</div>

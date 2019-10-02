@@ -1,0 +1,15 @@
+
+h1 {
+	text-align: center;
+	margin-top: 2%;
+}
+
+.inventario--container {
+
+	height: 85vh;
+	border: 1px solid #cccccc;
+	border-radius: 15px;
+	width: 94vw;
+	margin-left: 2vw;
+
+}
