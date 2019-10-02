@@ -1,7 +1,7 @@
 
 h1 {
 	text-align: center;
-	margin-top: 2%;
+	margin-top: 10%;
 }
 
 .inventario--container {
@@ -12,4 +12,34 @@ h1 {
 	width: 94vw;
 	margin-left: 2vw;
 
+}
+
+.botones--principales {
+
+	width: 90%;
+	margin-top: 5%;
+	margin-left: 5%;
+	display: flex;
+
+}
+
+.boton {
+	display: block; 
+	width: 25%;
+	border: 1px solid rgb(2, 132, 150);
+	text-align: center;
+	padding: 10%;
+	font-size: 1.3em;
+	border-radius: 25px;
+}
+.boton:hover {
+	-webkit-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	cursor: pointer;
+}
+
+
+.margin--left--button {
+	margin-left: 5%;
 }
