@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { ComprasComponent } from './compras/compras.component';
+import { RegistroComponent } from './inventario/registro/registro.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'inventario', component: InventarioComponent },
   { path: 'reportes', component: ReportesComponent },
   { path: 'compras', component: ComprasComponent },
+  { path: 'alta-inventario', component: RegistroComponent }
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

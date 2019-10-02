@@ -9,6 +9,7 @@ import { InventarioComponent } from './inventario/inventario.component';
 import { ReportesComponent } from './reportes/reportes.component';
 import { ComprasComponent } from './compras/compras.component';
 import { RegistroComponent } from './inventario/registro/registro.component';
+import { ConsultaComponent } from './inventario/consulta/consulta.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RegistroComponent } from './inventario/registro/registro.component';
     InventarioComponent,
     ReportesComponent,
     ComprasComponent,
-    RegistroComponent
+    RegistroComponent,
+    ConsultaComponent
   ],
   imports: [
     BrowserModule,
