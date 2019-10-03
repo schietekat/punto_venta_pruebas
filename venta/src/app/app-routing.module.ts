@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'inventario', component: InventarioComponent },
   { path: 'reportes', component: ReportesComponent },
   { path: 'compras', component: ComprasComponent },
-  { path: 'alta-inventario', component: RegistroComponent }
+  { path: 'alta-inventario', component: RegistroComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
