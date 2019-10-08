@@ -1,0 +1,31 @@
+
+h1 {
+	text-align: center;
+	margin: 5% 0;
+}
+
+.formulario {
+	margin: 5% 5%;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.campo {
+	margin-top: 20px;
+}
+
+.campo label {
+	display: block;
+	width: 20%;
+	margin-right: 80%;
+	/* font-size: .8em; */
+	margin-bottom: 5px;
+}
+
+.campo input {
+	padding: 5px 10px;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	width: 30%;
+}

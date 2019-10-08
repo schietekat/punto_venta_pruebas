@@ -1,7 +1,7 @@
 
 h1 {
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 .inventario--container {
@@ -42,4 +42,26 @@ h1 {
 
 .margin--left--button {
 	margin-left: 5%;
+}
+
+
+
+.proveedores {
+	display: block; 
+	width: 35%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 22.5%; 
+	border: 1px solid rgb(2, 132, 150);
+	text-align: center;
+	padding: 5% 10%;
+	font-size: 1.3em;
+	border-radius: 25px;
+}
+
+.proveedores:hover {
+	-webkit-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+	cursor: pointer;
 }
