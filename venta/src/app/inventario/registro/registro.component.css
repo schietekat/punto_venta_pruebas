@@ -2,6 +2,7 @@
 h1 {
 	text-align: center;
 	margin: 5% 0;
+	color: #f1f1f1;
 }
 
 .formulario {
@@ -9,6 +10,7 @@ h1 {
 	border: 1px solid #cccccc;
 	border-radius: 10px;
 	padding: 20px;
+	background: #ffffff;
 }
 
 .campo {
@@ -21,11 +23,19 @@ h1 {
 	margin-right: 80%;
 	/* font-size: .8em; */
 	margin-bottom: 5px;
+	margin-left: 3%;
 }
 
 .campo input {
-	padding: 5px 10px;
+	padding: 10px 10px;
 	border: 1px solid #cccccc;
 	border-radius: 10px;
-	width: 30%;
+	width: 90%;
+	margin-left: 3%;
+}
+
+.boton-registrar {
+	margin-left: 3%;
+	padding: 15px 25px;
+	font-size: 1em;
 }

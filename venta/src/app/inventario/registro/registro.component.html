@@ -1,7 +1,15 @@
 
+<app-navbar></app-navbar>
+
 <h1>Alta de productos</h1>
 
 <div class="formulario">
+
+	<div class="campo">
+		<label for="id_producto">ID de Producto</label>
+		<input type="text" name="id_producto" id="id_producto" placeholder="ID Producto">
+	</div>
+		
 
 	<div class="campo">
 		<label for="nombre_producto">Nombre de Producto</label>
@@ -20,7 +28,7 @@
 
 
 	<div class="campo">
-		<label for="cantidad">Unidad</label>
+		<label for="cantidad">Unidades</label>
 		<input type="text" name="cantidad" id="cantidad" placeholder="Unidades a registrar">
 	</div>
 
@@ -30,12 +38,10 @@
 	</div>
 
 	<div class="campo">
-		<label for="proveedor">Proveedor</label>
-		<input type="text" name="proveedor" id="proveedor" placeholder="Proveedor">
+		<label for="proveedor">ID Proveedor</label>
+		<input type="text" name="proveedor" id="proveedor" placeholder="ID Proveedor">
 	</div>
 
-
-
-
+	<button class="boton-registrar" (click)="registrar()">Registrar Producto</button>
 
 </div>

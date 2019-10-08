@@ -15,6 +15,7 @@ import { RegistroComponent } from './inventario/registro/registro.component';
 import { ConsultaComponent } from './inventario/consulta/consulta.component';
 import { ProveedoresComponent } from './inventario/proveedores/proveedores.component';
 import { environment } from 'src/environments/environment';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   	declarations: [
@@ -27,6 +28,7 @@ import { environment } from 'src/environments/environment';
 		RegistroComponent,
 		ConsultaComponent,
 		ProveedoresComponent,
+		NavbarComponent,
   	],
   	imports: [
 		BrowserModule,

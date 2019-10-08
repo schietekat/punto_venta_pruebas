@@ -17,7 +17,7 @@ h1 {
 .botones--principales {
 
 	width: 90%;
-	margin-top: 5%;
+	margin-top: 10%;
 	margin-left: 5%;
 	display: flex;
 
@@ -31,6 +31,7 @@ h1 {
 	padding: 10%;
 	font-size: 1.3em;
 	border-radius: 25px;
+	background: #ffffff;
 }
 .boton:hover {
 	-webkit-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
