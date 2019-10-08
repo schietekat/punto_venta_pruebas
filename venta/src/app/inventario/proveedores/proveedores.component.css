@@ -4,7 +4,7 @@ h1 {
 	margin: 5% 0;
 }
 
-.formulario {
+.formulario, .lista {
 	margin: 5% 5%;
 	border: 1px solid #cccccc;
 	border-radius: 10px;
@@ -28,4 +28,9 @@ h1 {
 	border: 1px solid #cccccc;
 	border-radius: 10px;
 	width: 30%;
+}
+
+.dato {
+	margin-left: 10px;
+	font-size: .8em;
 }

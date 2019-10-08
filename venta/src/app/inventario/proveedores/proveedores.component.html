@@ -1,29 +1,51 @@
 
-<h1>Alta de Proveedores</h1>
+<div class="alta--proveedores">
+	<h1>Alta de Proveedores</h1>
 
-<div class="formulario">
+	<div class="formulario">
 
-	<div class="campo">
-		<label for="id_proveedor">ID de Proveedor</label>
-		<input type="text" name="id_proveedor" id="id_proveedor" placeholder="ID Proveedor">
+		<div class="campo">
+			<label for="id_proveedor">ID de Proveedor</label>
+			<input type="text" name="id_proveedor" id="id_proveedor" placeholder="ID Proveedor">
+		</div>
+
+		<div class="campo">
+			<label for="nombre_proveedor">Nombre del Proveedor</label>
+			<input type="text" name="nombre_proveedor" id="nombre_proveedor" placeholder="Nombre Proveedor">
+		</div>
+
+		<div class="campo">
+			<label for="email_proveedor">Correo del proveedor</label>
+			<input type="email" name="email_proveedor" id="email_proveedor" placeholder="Correo del proveedor">
+		</div>
+
+
+		<div class="campo">
+			<label for="telefono_proveedor">Teléfono</label>
+			<input type="text" name="telefono_proveedor" id="telefono_proveedor" placeholder="Teléfono Proveedor">
+		</div>
+
+		<button class="boton-registrar" (click)="registrar()">Registrar Proveedor</button>
+
 	</div>
+	
+</div>
 
-	<div class="campo">
-		<label for="nombre_proveedor">Nombre del Proveedor</label>
-		<input type="text" name="nombre_proveedor" id="nombre_proveedor" placeholder="Nombre Proveedor">
+<div class="consulta--proveedores">
+
+	<h1>Lista de proveedores</h1>
+
+	<div class="lista" >
+
+		<div class="" *ngFor="let proveedor of proveedoresList | async">
+
+			<p>Datos de <b>{{ proveedor.nombre }}</b></p>
+
+			<p class="dato">ID:  {{ proveedor.id }} </p>
+			<p class="dato">Email:  {{ proveedor.email }} </p>
+			<p class="dato">Teléfono: {{ proveedor.telefono }} </p>
+		</div>
+
 	</div>
-
-	<div class="campo">
-		<label for="email_proveedor">Correo del proveedor</label>
-		<input type="email" name="email_proveedor" id="email_proveedor" placeholder="Correo del proveedor">
-	</div>
-
-
-	<div class="campo">
-		<label for="telefono_proveedor">Teléfono</label>
-		<input type="text" name="telefono_proveedor" id="telefono_proveedor" placeholder="Teléfono Proveedor">
-	</div>
-
-	<button class="boton-registrar" (click)="registrar()">Registrar Proveedor</button>
 
 </div>
