@@ -10,7 +10,9 @@ export const environment = {
 		databaseURL: 'https://pvpruebas-91113.firebaseio.com',
 		projectId: 'pvpruebas-91113',
 		storageBucket: 'pvpruebas-91113.appspot.com',
-		messagingSenderId: '698914267362'
+		messagingSenderId: '698914267362',
+		appId: "1:698914267362:web:69218306b8fcff610bfebb",
+		measurementId: "G-7SYZJNDR05"
 	}
 };
 
