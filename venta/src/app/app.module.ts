@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -11,24 +14,27 @@ import { ComprasComponent } from './compras/compras.component';
 import { RegistroComponent } from './inventario/registro/registro.component';
 import { ConsultaComponent } from './inventario/consulta/consulta.component';
 import { ProveedoresComponent } from './inventario/proveedores/proveedores.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-    FooterComponent,
-    InventarioComponent,
-    ReportesComponent,
-    ComprasComponent,
-    RegistroComponent,
-    ConsultaComponent,
-    ProveedoresComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  	declarations: [
+		AppComponent,
+		HomePageComponent,
+		FooterComponent,
+		InventarioComponent,
+		ReportesComponent,
+		ComprasComponent,
+		RegistroComponent,
+		ConsultaComponent,
+		ProveedoresComponent,
+  	],
+  	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		AngularFireModule.initializeApp(environment.firebase),
+		AngularFirestoreModule,
+  	],
+  	providers: [],
+  	bootstrap: [AppComponent]
 })
 export class AppModule { }
