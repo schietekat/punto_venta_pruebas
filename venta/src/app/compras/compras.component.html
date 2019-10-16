@@ -3,7 +3,12 @@
 
 <div class="container">
     <div id="agregar--productos">
-        <input (keyup)="buscarProducto()" id="input--busqueda" class="buscador--productos" type="text" placeholder="Buscar productos">
+        <input 
+            (keyup)="buscarProducto()"
+            [(ngModel)]="valorBuscar" 
+            id="input--busqueda" 
+            class="buscador--productos" type="text" 
+            placeholder="Buscar productos">
     </div>
     
     <div id="resumen--compra">

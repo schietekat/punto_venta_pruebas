@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
 	selector: 'app-compras',
@@ -6,18 +7,27 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./compras.component.css']
 })
 export class ComprasComponent implements OnInit {
-
-constructor() { }
-
-	buscarProducto() {
-		var elemento = (<HTMLInputElement>document.getElementById("input--busqueda"));
-		console.log(elemento.value);
-
-		// Rutina para búsqueda de producto en Firebase.
-
+	
+	inventarioRef;
+	productos;
+	
+	constructor(private db: AngularFirestore) {
+		this.inventarioRef = db.collection("inventario");
 	}
+	
+
+	valorBuscar: String;
 
 	ngOnInit() {
+		
+	}
+
+	buscarProducto() {
+		console.log(this.valorBuscar);
+
+		// Rutina para búsqueda de producto en Firebase.
+		var query = this.inventarioRef.where("nombre_producto", "==", "CA");
+
 	}
 
 }

@@ -1,3 +1,51 @@
-<p>
-  consulta works!
-</p>
+<app-navbar></app-navbar>
+
+<h1>Inventario</h1>
+
+<div class="container">
+
+	
+	<div class="tbl-header margin-top-10">
+		<table cellpadding="0" cellspacing="0" border="0">
+		<thead>
+			<tr>
+			<th>ID Producto</th>
+			<th>Nombre</th>
+			<th>Costo</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			<th>Categoría</th>
+			<th>Proveedor</th>
+			</tr>
+		</thead>
+		</table>
+	</div>
+	<div class="tbl-content">
+		<table cellpadding="0" cellspacing="0" border="0">
+		<tbody>
+			<tr *ngFor="let producto of productos | async">
+				<td>{{ producto.id_producto }}</td>
+				<td>{{ producto.nombre_producto }}</td>
+				<td>{{ producto.precio_compra }}</td>
+				<td>{{ producto.precio_venta }}</td>
+				<td>{{ producto.cantidad }}</td>
+				<td>{{ producto.categoria }}</td>
+				<td>{{ producto.proveedor }}</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+
+
+
+</div>
+
+<script>	
+
+	// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+	$(window).on("load resize ", function() {
+	var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+	$('.tbl-header').css({'padding-right':scrollWidth});
+	}).resize();
+
+</script>

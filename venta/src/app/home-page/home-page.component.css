@@ -4,7 +4,7 @@
 
 
 /*  Titlo de la página  */
-.titulo {
+/* .titulo {
 
 	text-align: center;
 	width: 20vw;
@@ -12,14 +12,14 @@
 	margin-top: 10vh;
 	color: #fff;
  
-}
+} */
 
 
 
 .botones--principales {
 
 	width: 90%;
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 5%;
 	display: flex;
 
@@ -28,7 +28,7 @@
 .boton {
 	display: block; 
 	width: 25%;
-	border: 1px solid rgb(2, 132, 150);
+	/* border: 1px solid rgb(2, 132, 150); */
 	text-align: center;
 	padding: 10%;
 	font-size: 1.3em;

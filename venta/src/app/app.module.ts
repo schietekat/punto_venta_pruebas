@@ -16,6 +16,7 @@ import { ConsultaComponent } from './inventario/consulta/consulta.component';
 import { ProveedoresComponent } from './inventario/proveedores/proveedores.component';
 import { environment } from 'src/environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   	declarations: [
@@ -35,6 +36,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 		AppRoutingModule,
 		AngularFireModule.initializeApp(environment.firebase),
 		AngularFirestoreModule,
+		FormsModule
   	],
   	providers: [],
   	bootstrap: [AppComponent]
