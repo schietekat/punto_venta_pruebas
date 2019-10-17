@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<h1>Create a new account</h1>
+
+<div class="formulario">
+
+  <div class="campo-doble">
+    <div class="campo" style="width: 48%;">
+      <label for="names">Names</label>
+      <input type="password" name="names" id="names" placeholder="Enter your name(s)">
+    </div>
+    <div class="campo" style="width: 48%;">
+      <label for="lastnames">Last name(s)</label>
+      <input type="password" name="lastnames" id="lastnames" placeholder="Enter your last name(s)">
+    </div>
+  </div>
+
+  <div class="campo">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" placeholder="Username or email adress">
+  </div>
+
+  <div class="campo-doble">
+    <div class="campo" style="width: 48%;">
+      <label for="secret">Password</label>
+      <input type="password" name="secret" id="secret" placeholder="Enter a valid password">
+    </div>
+    <div class="campo" style="width: 48%;">
+      <label for="confirm_secret">Confirm</label>
+      <input type="password" name="confirm_secret" id="confirm_secret" placeholder="Confirm your password">
+    </div>
+  </div>
+
+  <div class="campo">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email adress">
+  </div>
+
+  <div class="campo">
+    <label for="cellphone">Cellphone</label>
+    <input type="text" name="cellphone" id="cellphone" placeholder="Enter your cellphone">
+  </div>
+
+  <div style="text-align: center;">
+    <button class="boton-registrar" (click)="register();">Register</button>
+  </div>
+
+</div>

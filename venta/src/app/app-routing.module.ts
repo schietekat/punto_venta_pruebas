@@ -8,8 +8,13 @@ import { ComprasComponent } from './compras/compras.component';
 import { RegistroComponent } from './inventario/registro/registro.component';
 import { ProveedoresComponent } from './inventario/proveedores/proveedores.component';
 import { ConsultaComponent } from './inventario/consulta/consulta.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './login/register/register.component';
+
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'footer', component: FooterComponent},
   { path: 'inventario', component: InventarioComponent },

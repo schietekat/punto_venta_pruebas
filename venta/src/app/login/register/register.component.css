@@ -1,0 +1,49 @@
+
+h1 {
+	text-align: center;
+	color: #f1f1f1;
+}
+
+.formulario {
+	margin: 5% 5%;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	padding: 20px;
+    background: #ffffff;
+}
+
+.campo {
+	margin-top: 20px;
+}
+
+.campo label {
+	display: block;
+	width: 20%;
+	margin-right: 80%;
+	/* font-size: .8em; */
+	margin-bottom: 5px;
+	margin-left: 3%;
+}
+
+.campo input {
+	padding: 10px 10px;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	width: 90%;
+	margin-left: 3%;
+}
+
+.boton-registrar {
+	margin-left: 3%;
+	padding: 15px 25px;
+    font-size: 1em;
+    width: 50%;
+    justify-content: center;
+
+}
+
+.campo-doble{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}

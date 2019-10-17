@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<h1>Login</h1>
+
+<div class="formulario">
+
+	<div class="campo">
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username" placeholder="">
+	</div>
+
+
+	<div class="campo">
+		<label for="secret">Password</label>
+		<input type="password" name="secret" id="secret" placeholder="">
+	</div>
+
+	<div style="text-align: center;">
+		<button class="boton-registrar" (click)="login();">Sign in</button>
+	</div>
+
+</div>
+
+<div class="formulario" style="margin-top: -4%; text-align: center;">
+	<p>New here? Register now! <a routerLink="/register">Create an account</a></p>
+</div>

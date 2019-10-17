@@ -17,6 +17,8 @@ import { ProveedoresComponent } from './inventario/proveedores/proveedores.compo
 import { environment } from 'src/environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './login/register/register.component';
 
 @NgModule({
   	declarations: [
@@ -30,6 +32,8 @@ import { FormsModule } from '@angular/forms';
 		ConsultaComponent,
 		ProveedoresComponent,
 		NavbarComponent,
+		LoginComponent,
+		RegisterComponent,
   	],
   	imports: [
 		BrowserModule,
